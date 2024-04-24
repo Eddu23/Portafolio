@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8c8c83e1d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="fondo"></div>
+    <header>
+        <div class="navbar_links">
+            <a href="#"><i class="fa-solid fa-code"></i></a>
+            <button class="abrir_menu" id="abrir"><i class="fa-solid fa-bars"></i></button>
+            <nav class="header_links" id="nav">
+                <button class="cerrar_menu" id="cerrar"><i class="fa-solid fa-xmark"></i></button>
+                <ul class="list_header">
+                    <li><a href="#sobremi" id="liCerrar">Sobre mi</a></li>
+                    <li><a href="#formacion" id="liCerrar">Formación</a></li>
+                    <li><a href="#proyecs" id="liCerrar">Proyectos</a></li>
+                    <li><a href="#contac" id="liCerrar">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="presentacion_personal">
+            <div class="presentacion_texto">
+                <h1><span>Hola, Soy</span><br>Desarrollador Web</h1>
+                <p>Mi nombre es Eduardo Hernández, soy Licenciado en animación y artes digitales especializado en desarrollo web y modelado 3D</p>
+                <div class="buttons_presentacion">
+                    <ul>
+                        <li><a target="_blank" href="https://github.com/Eddu23">Github <i
+                                    class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i></a>
+                        </li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/edduardo/">Linkdin <i
+                                    class="fa-solid fa-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i></a>
+                        </li>
+                        <li><a target="_blank" href="doc/CurriculumVitae.pdf" download="CV" id="download">Curriculum
+                                Vitae <i class="fa-solid fa-arrow-up fa-rotate-by"
+                                    style="--fa-rotate-angle: 45deg;"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class=" imge_present">
+                <div class="presentacion_imge"><img src="img/chacarter.png" alt=""></div>
+            </div>  -->
+        </section>
+        <section class="sobre_mi" id="sobremi">
+            <div class="info_sobreMi">
+                <div class="imge_aboutMe"><img src="img/7814978.jpg" alt=""></div>
+                <div class="info_aboutMe">
+                    <h2>Sobre Mi</h2>
+                    <p>Soy de desarrollador Front-End apasionado por crear paginas web interactivas y responsivas.
+                        Tengo experiencia con Javascript, Bootstrap, Astro, HTML, CSS y Git. Aprendo rápido y siempre estoy buscando ampliar mis conocimientos
+                        me gusta trabajar en equipo y me entusiasma aprender Back-End y desarrollo de aplicaciones para móviles.
+                    <div class="lista_certif">
+                        <ul>
+                            <li class="list_ski">Skills</li>
+                            <!-- <li class="list_cer">Certifications</li> -->
+                        </ul>
+                    </div>
+                    <div class="lista_skills">
+                        <ul>
+                            <li>HTML 5</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Boostrap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="experiencia" id="formacion">
+            <h2><i class="fa-solid fa-chalkboard-user"></i>Educación</h2>
+            <ol>
+                <div class="circle_experince"></div>
+                <li class="experiencia_itech">
+
+                    <time> Enero del 2019 - Mayo 2022</time>
+                    <h3>Instituto Tecnológico Cultural de Hidalgo</h3>
+                    <p class="experiencia_uni">Licenciatura en Animación y Artes digitales</p>
+                    <p class="experiencia_resume">Lleve acabo proyectos de modelado 3D para videojuegos y proyectos para paginas web responsivas</p>
+                </li>
+                <!-- <li class="experiencia_uveg">
+                    <div class="circle_experince"></div>
+                    <time>Enero del 2023 - Mayo 203</time>
+                    <h3>Universidad Tecmilenio</h3>
+                    <p class="experiencia_uni">Desarrollo de paginas web responsivas</p>
+                    <p class="experiencia_resume">I carried out the development of a web tool that sought to streamline some internal processes in the Human Talent area.</p>
+                </li> -->
+                <li class="experiencia_uveg">
+                    <div class="circle_experince"></div>
+                    <time> Enero del 2024 - Presente...</time>
+                    <h3>ALURA LATAM</h3>
+                    <p class="experiencia_uni">Desarrollo web Front End</p>
+                    <p class="experiencia_resume">Especialización en desarrollo de paginas web</p>
+                </li>
+                <li class="experiencia_uveg">
+                    <div class="circle_experince"></div>
+                    <time> Enero del 2024 - Presente...</time>
+                    <h3>Universidad Virtual Del Estado De Guanajuato</h3>
+                    <p class="experiencia_uni">Ingeniería en Desarrollo de Software</p>
+                    <p class="experiencia_resume">Ingeniería donde podre especializarme en el desarrollo de software y aplicaciones</p>
+                </li>
+            </ol>
+
+        </section>
+        <section class="proyectos" id="proyecs">
+            <h2><i class="fa-solid fa-code"></i>Proyectos</h2>
+            <div class="proyectos_general">
+                <article class="proyectos_islas">
+                    <div class="header_proyectos">
+                        <h3>Magic Tours</h3>
+                        <p>Pagina publicitaria realizada para una agencia de viajes en Tamaulipas</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="proyectos_body">
+                        <div class="proyecto_img"><img src="img/magicTour.png" alt=""></div>
+                        <div class="proyectos_buttons">
+                            <a href=""><button class="buttons_proj butt_git"><i
+                                        class="fa-brands fa-github"></i></button></a>
+                            <a href=""><button class="buttons_proj butt_git"><i
+                                        class="fa-solid fa-up-right-from-square"></i></button></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="proyectos_islas">
+                    <div class="header_proyectos">
+                        <h3>Encriptador de texto</h3>
+                        <p>Proyecto de encriptación y desencriptación de texto</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="proyectos_body">
+                        <div class="proyecto_img"><img src="img/Encript.png" alt=""></div>
+                        <div class="proyectos_buttons">
+                            <a href=""><button class="buttons_proj butt_git"><i
+                                        class="fa-brands fa-github"></i></button></a>
+                            <a href=""><button class="buttons_proj butt_git"><i
+                                        class="fa-solid fa-up-right-from-square"></i></button></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <section class="contacto" id="contac">
+            <h3><i class="fa-regular fa-comments"></i>Contáctame</h3>
+            <form action="https://formsubmit.co/7a55aa07861f39b30734a67504610a0b" method="POST" />
+            <div class="contacto_form">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" autocomplete="name" placeholder="John Doe" required>
+            </div>
+            <div class="contacto_form">
+                <label for="email">Correo</label>
+                <input type="email" name="email" autocomplete="email" placeholder="john@example.com" required>
+            </div>
+            <div class="contacto_form">
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="20" rows="5" placeholder="Escribe aquí tu mensaje..."
+                    required></textarea>
+            </div>
+            <div class="contacto_button">
+                <div class="btn_send">
+                    <input type="submit" value="Enviar">
+                </div>
+                <div class="contacto_correo">
+                    <p>O escríbeme a:</p>
+                    <div class="correo">
+                        <div class="correo_fondo">
+                            <p id="textoParaCopiar">osmar.edd@gmail.com</p>
+                        </div>
+                        <button type="button" id="copy" class="copy" onclick="copiarTexto()"><i
+                                class="fa-solid fa-copy"></i></button>
+                    </div>
+                    <!-- <textarea name="textarea" id="demo" readonly></textarea>
+                        <div class="simbol">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <p>Texto encriptado</p>
+                        </div>
+                        <button class="button-desencriptar-text" type="button" id="CopiarTexto" onclick="CopiarTexto()">Copiar
+                            Texto</button> -->
+                </div>
+            </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <p>Hecho por <a href="">Eduardo Hernandez<i class="fa-solid fa-cat"></i></a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
