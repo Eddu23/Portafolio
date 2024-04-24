@@ -92,6 +92,10 @@ main {
   font-size: 2rem;
 }
 
+.cerrar_menu i {
+  margin: 20px 0;
+}
+
 .list_header {
   display: flex;
   gap: 50px;
@@ -165,7 +169,7 @@ nav a {
 
 .buttons_presentacion li a {
   color: var(--font-white);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 200;
 }
 
@@ -173,17 +177,9 @@ nav a {
   transition: all 0.3s ease-in-out;
 }
 
-.buttons_presentacion a:hover {
-  color: var(--green-font);
-}
-
 .buttons_presentacion i {
   color: var(--green-font);
   z-index: -2;
-}
-
-.buttons_presentacion li:hover {
-  transform: translateY(-1px) translateX(-0.5px);
 }
 
 /* ---------------------------------------MAIN--------------------------------------- */
@@ -265,7 +261,7 @@ li {
 }
 
 .experiencia i {
-  margin: 0 20px;
+  margin: 0 1rem;
   color: var(--green-font);
 }
 
@@ -335,7 +331,7 @@ li {
 }
 
 .proyectos h2 i {
-  padding: 0 15px;
+  padding: 0 1rem;
   color: var(--green-font);
 }
 
@@ -347,7 +343,7 @@ li {
 }
 
 .header_proyectos p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 200;
   margin-bottom: 15px;
 }
@@ -400,10 +396,6 @@ li {
   transition: 400ms;
 }
 
-.buttons_proj:hover {
-  background-color: var(--bg-islas);
-  color: var(--green-font);
-}
 
 .buttons_proj i {
   font-size: 1.5rem;
@@ -427,7 +419,7 @@ li {
 }
 
 .contacto h3 i {
-  padding: 0 15px;
+  padding: 0 1rem;
   color: var(--green-font);
 }
 
@@ -484,11 +476,6 @@ textarea:focus {
   transition: 400ms;
 }
 
-.btn_send input:hover {
-  background-color: var(--bg-islas);
-  color: var(--green-font);
-}
-
 .contacto_correo {
   display: flex;
   align-items: center;
@@ -525,10 +512,13 @@ textarea:focus {
   border: 1px var(--green-font) solid;
   transition: 400ms;
 }
-.copy:hover {
+
+.copy:active{
   background-color: var(--bg-islas);
   color: var(--green-font);
 }
+
+
 
 /* ---------------------------------------FOOTER--------------------------------------- */
 
@@ -575,6 +565,32 @@ footer {
   }
 }
 
+@media (min-width: 1000px) { 
+  .buttons_presentacion li:hover {
+    transform: translateY(-1px) translateX(-0.5px);
+  }
+
+  .buttons_presentacion a:hover {
+    color: var(--green-font);
+  }
+
+  .buttons_proj:hover {
+    background-color: var(--bg-islas);
+    color: var(--green-font);
+  }
+  
+  .copy:hover{
+    background-color: var(--bg-islas);
+    color: var(--green-font);
+  }
+
+  .btn_send input:hover {
+    background-color: var(--bg-islas);
+    color: var(--green-font);
+  }
+}
+
+
 @media (max-width: 1000px) {
   .navbar_links,
   main {
@@ -583,21 +599,25 @@ footer {
   }
 
   .buttons_presentacion {
-    width: 45%;
+    width: 60%;
+  }
+
+  .contacto {
+    padding: 15px;
   }
 }
 
 @media (max-width: 730px) {
-  .buttons_presentacion {
+  /* .buttons_presentacion {
     width: 60%;
-  }
+  } */
 
   .info_sobreMi {
     flex-direction: column;
   }
-  .info_aboutMe p {
+  /* .info_aboutMe p {
     font-size: 1rem;
-  }
+  } */
 }
 
 @media (max-width: 530px) {
@@ -605,9 +625,9 @@ footer {
     font-size: 4rem;
   }
 
-  .presentacion_texto p {
+  /* .presentacion_texto p {
     font-size: 1rem;
-  }
+  } */
 
   .abrir_menu,
   .cerrar_menu {
@@ -653,8 +673,8 @@ footer {
   }
 
   .buttons_presentacion {
-    width: 70%;
-  }
+    width: 90%;
+  } 
 
   .lista_skills li {
     line-height: 20px;
