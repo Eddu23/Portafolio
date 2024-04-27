@@ -427,30 +427,112 @@ li {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-bottom: 20px;
 }
 
 .contacto_form label {
   font-size: 1rem;
+  font-weight: 700;
   color: var(--font-white);
+  display: block;
+  /* padding: 0 10px; */
+}
+
+.contacto_form .formulario_input:focus,
+textarea:focus {
+  border: none;
+  outline: none;
+  outline: 2px solid var(--green-font);
+}
+
+.formulario_grupo-input {
+  position: relative;
+}
+
+.formulario_input {
+  width: 100%;
+  transition: 0.3s ease all;
+}
+
+.formilario_input-estado {
+  font-size: 0.9rem;
+  /* padding: 0 10px; */
+  display: none;
+}
+
+.formilario_input-estado-activo {
+  display: block;
+}
+
+.formulario_validacion-estado {
+  position: absolute;
+  color: red;
+  right: 10px;
+  bottom: 15px;
+  font-size: 1.3rem;
+  opacity: 0;
+}
+
+.formulario_mensaje {
+  height: 45px;
+  line-height: 45px;
+  background: #fe3d3d;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
+  margin-bottom: 15px;
+}
+
+.formulario_mensaje-activo {
+  display: block;
+}
+
+.formulario_mensaje-exito {
+  font-size: 1rem;
+  color: var(--green-font);
+  text-align: center;
+  padding-top: 25px;
+  display: none;
+}
+
+.formulario_mensaje-exito-activo {
+  display: block;
+}
+
+/* -----------------Estilos para validación---------------- */
+
+.formulario_grupo-correcto 
+.formulario_validacion-estado {
+  color: var(--green-font);
+  opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario_label {
+  color: #d84545;
+}
+
+.formulario_grupo-incorrecto .formulario_validacion-estado {
+  color: #d84545;
+  opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario_input:focus{
+  outline: 2px solid #d84545;
 }
 
 .contacto_form input,
-textarea {
+textarea, .formulario_input {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: var(--font-white);
   border-radius: 10px;
   padding: 15px 10px;
-  margin-bottom: 15px;
   background-color: var(--bg-islas);
+  outline: none;
   border: none;
 }
 
-.contacto_form input:focus,
-textarea:focus {
-  border: none;
-  outline: 1px solid var(--green-font);
-}
+
 
 .contacto_form textarea {
   resize: none;
@@ -461,7 +543,7 @@ textarea:focus {
   justify-content: space-between;
 }
 
-.btn_send input {
+.btn_send button {
   width: 95.02px;
   height: 42.66px;
   border: none;
@@ -473,7 +555,7 @@ textarea:focus {
   border-radius: 10px;
   cursor: pointer;
   border: 1px var(--green-font) solid;
-  transition: 400ms;
+  transition: .3s ease all;
 }
 
 .contacto_correo {
@@ -515,6 +597,22 @@ textarea:focus {
 
 .copy:active{
   background-color: var(--bg-islas);
+  color: var(--green-font);
+}
+
+.texto_copy {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  border-radius: 10px;
+  display: none;
+}
+
+.texto_copy-active {
+  display: block;
+}
+
+.texto_copy p {
   color: var(--green-font);
 }
 
@@ -584,7 +682,7 @@ footer {
     color: var(--green-font);
   }
 
-  .btn_send input:hover {
+  .btn_send button:hover {
     background-color: var(--bg-islas);
     color: var(--green-font);
   }
@@ -692,7 +790,7 @@ footer {
     margin-bottom: 15px;
   }
 
-  .btn_send input {
+  .btn_send button {
     width: 100%;
   }
 
